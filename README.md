@@ -10,13 +10,13 @@ PHP 5+<br />
 CURL<br />
 
 # Getting Started
-Follow the instructions in <code>basic_example.php</code> for a detailed example of <code>basic</code> method and <code>oauth_example.php</code> for the <code>oauth2</code> authentication. There are also instructions on Bitly's Developer Porter (http://dev.bitly.com)
+Follow the instructions in <code>basic_example.php</code> for a detailed example of <code>basic</code> method and <code>oauth_example.php</code> for the <code>oauth2</code> authentication. There are also instructions on Bitly's Developer Portral (http://dev.bitly.com)
 
-<br />It's easy to make a call to Bity API. Just include <code>simpleBitly.php</code> in your script and use the following examples below.
+<br />It's easy to make a call to the Bity API. Just include <code>simpleBitly.php</code> in your script and use the following examples below.
 
 For oauth2 requests:
 <pre>
-$bitly = new simpleBitly(client_id_, client_secret, access_token);
+$bitly = new simpleBitly(CLIENT_ID_, CLIENT_SECRET, ACCESS_TOKEN);
 $data = $bitly->get("/expand", array("shortUrl" => "http://bit.ly/1RmnUT");
 </pre>
 
@@ -24,7 +24,7 @@ For oauth2 requests:
 <pre>
 $bitly = new simpleBitly();
 $bitly->setBasic(USERNAME, APIKEY)
-$data = $bitly->get_basic_("/expand", array("shortUrl" => "http://bit.ly/1RmnUT");
+$data = $bitly->get_basic("/expand", array("shortUrl" => "http://bit.ly/1RmnUT");
 </pre>
 
 # Error Handling
