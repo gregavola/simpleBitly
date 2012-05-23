@@ -1,7 +1,4 @@
-===========
-A Simple PHP Library to interfact with Bitly API V3 (OAuth and Basic)
-
-# simpleBitly Bitly API Wrapper
+# simpleBitly Bitly API Wrapper (OAuth2 and Basic Support)
 
 This library is written to make calls against the Bitly API V3 (oauth and basic).<br />
 
